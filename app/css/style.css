@@ -1,14 +1,34 @@
 html,
 body {
   font-size: 16px;
-  font-family: "Helvetica Neue";
+  font-family: "PT Serif";
+  height: 100%;
 }
 h1 {
-  font-weight: 500;
-  font-size: 7em;
+  font-family: "Proxima Nova Extra Condensed";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 6em;
 }
-.hero {
-  margin-top: 100px;
+.home {
+  height: inherit;
+}
+.home .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+}
+.home .hero p {
+  font-size: 5em;
+  padding-top: 14px;
+  font-family: "Adobe Garamond Pro";
+}
+.about {
+  display: flex;
+}
+.about .left {
+  width: 50%;
 }
 .project {
   height: 300px;
