@@ -2,25 +2,53 @@ html,
 body {
   font-size: 16px;
   font-family: "Helvetica Neue";
+  height: 100%;
+  margin: 0px;
 }
 h1 {
   font-weight: 500;
   font-size: 7em;
+  padding: 10px;
 }
 .hero {
-  margin-top: 100px;
+  display: flex;
+  height: 85%;
+  justify-content: center;
+  align-items: center;
 }
-.project {
-  height: 300px;
-  border: solid blue 1px;
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .left {
+  display: flex;
+  justify-content: center;
+  background-color: seashell;
+}
+.about .right {
+  display: flex;
+  justify-content: center;
+  background-color: peachpuff;
 }
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
 }
 .nav .nav-link {
   padding: 10px;
   font-size: 16px;
+}
+@media (min-width: 750px) {
+  .about {
+    flex-direction: row;
+  }
+  .about .left {
+    width: 50%;
+    background-color: darkseagreen;
+  }
+  .about .right {
+    width: 50%;
+    background-color: linen;
+  }
 }
