@@ -1,7 +1,8 @@
 html, body {
-  font-size: 16px;
   font-family: "PT Serif";
+  font-size: 16px;
   height: 100%;
+  margin: 0px;
 }
 
 h1 {
@@ -9,68 +10,39 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 6em;
+  padding: 10px;
 }
 
-.home {
-  height: inherit;
-
-  .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 85%;
-
-    h1 {
-      //color: #e21914;
-    }
-
-    p {
-      //font-size: 6.9em;
-      font-size: 5em;
-      //color: #e0e0e0;
-
-      padding-top: 14px;
-      //font-style: italic;
-      font-family: "Adobe Garamond Pro";
-    }
-  }
+.hero {
+  display: flex;
+  height: 85%;
+  justify-content: center;
+  align-items: center;
 }
 
 .about {
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  width: 50%;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  //border: solid blue 1px;
+
   .left {
-    //width: 50%;
-    height: 100px;
-
+    display: flex;
     justify-content: center;
-    text-align: center;
-
-    align-items: center;
+    //align-items: center;
+    background-color: seashell;
   }
 
   .right {
-    height: 100px;
+    display: flex;
     justify-content: center;
-    text-align: center;
-
-    align-items: center;
+    background-color: peachpuff;
   }
-}
-
-.project {
-  height: 300px;
-  border: solid blue 1px;
 }
 
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
 
   .nav-link {
     padding: 10px;
@@ -78,3 +50,18 @@ h1 {
   }
 }
 
+
+@media (min-width: 750px) {
+  .about {
+    flex-direction: row;
+    .left {
+      width: 50%;
+      background-color: darkseagreen;
+    }
+
+    .right {
+      width: 50%;
+      background-color: linen;
+    }
+  }
+}

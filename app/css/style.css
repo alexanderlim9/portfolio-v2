@@ -3,44 +3,54 @@ body {
   font-size: 16px;
   font-family: "PT Serif";
   height: 100%;
+  margin: 0px;
 }
 h1 {
+  padding: 10px;
   font-family: "Proxima Nova Extra Condensed";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 6em;
 }
-.home {
-  height: inherit;
-}
-.home .hero {
+.hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
   height: 85%;
-}
-.home .hero p {
-  font-size: 5em;
-  padding-top: 14px;
-  font-family: "Adobe Garamond Pro";
+  justify-content: center;
+  align-items: center;
 }
 .about {
   display: flex;
+  flex-direction: column;
 }
 .about .left {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  background-color: seashell;
 }
-.project {
-  height: 300px;
-  border: solid blue 1px;
+.about .right {
+  display: flex;
+  justify-content: center;
+  background-color: peachpuff;
 }
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10px;
 }
 .nav .nav-link {
   padding: 10px;
   font-size: 16px;
+}
+@media (min-width: 750px) {
+  .about {
+    flex-direction: row;
+  }
+  .about .left {
+    width: 50%;
+    background-color: darkseagreen;
+  }
+  .about .right {
+    width: 50%;
+    background-color: linen;
+  }
 }
