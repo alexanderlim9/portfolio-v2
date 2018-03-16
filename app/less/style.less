@@ -1,16 +1,26 @@
+@container-width: 90%;
+
 html, body {
-  font-family: "PT Serif";
+  //font-family: "PT Serif";
+  font-family: "Georgia";
   font-size: 16px;
   height: 100%;
   margin: 0px;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Proxima Nova Extra Condensed";
   font-weight: 700;
   text-transform: uppercase;
+  margin: 20px 0px 0px 0px;
+}
+
+h1 {
   font-size: 6em;
-  padding: 10px;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 .hero {
@@ -18,6 +28,10 @@ h1 {
   height: 85%;
   justify-content: center;
   align-items: center;
+}
+
+p {
+  hyphens: auto;
 }
 
 .about {
@@ -33,7 +47,7 @@ h1 {
     background-color: seashell;
 
     img {
-      width: 90%;
+      width: @container-width;
       //height: 200px;
       overflow: hidden;
 
@@ -44,6 +58,37 @@ h1 {
     display: flex;
     justify-content: center;
     background-color: peachpuff;
+
+    .textbox {
+      width: @container-width;
+    }
+
+    .about-info {
+      display: flex;
+      flex-direction: column;
+      //justify-content: flex-end;
+      //align-items: flex-end;
+      margin: 40px 0px;
+
+      h3 {
+        display: inline;
+        padding-right: 10px;
+        margin-top: 0px
+      }
+
+      .social-link {
+        padding-right: 10px;
+
+        //h3 {
+          color: black;
+        //}
+
+        h3:hover {
+          color: gray;
+        }
+
+      }
+    }
   }
 }
 
@@ -56,19 +101,6 @@ h1 {
     padding: 10px;
     font-size: 16px;
   }
-}
-
-.media {
-  //width: 300px;
-  //height: 300px;
-
-  img {
-    width: 90%;
-    //height: 200px;
-    overflow: hidden;
-
-  }
-
 }
 
 @media (min-width: 750px) {
