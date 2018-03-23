@@ -78,6 +78,15 @@ p {
 .about .right .about-info .social-link h3:hover {
   color: gray;
 }
+.work {
+  margin-bottom: 250px;
+}
+.work .project-cover {
+  margin-bottom: 25px;
+}
+.work .project-cover .project-details p {
+  margin-top: -5px;
+}
 .nav {
   display: flex;
   flex-direction: row;
