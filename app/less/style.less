@@ -2,7 +2,6 @@
 @wrapper-width-tablet: 655px;
 @wrapper-width-desktop: 760px;
 
-
 html, body {
   //font-family: "PT Serif";
   font-family: "Georgia";
@@ -147,14 +146,20 @@ p {
     h3 {
       margin-bottom: 0px;
     }
-    .project-cover {
-      margin-bottom: 25px;
-      a:visited {
-        color: black;
-      }
-      .project-details {
-        p {
-          margin-top: -4px;
+    .project-row {
+      display: flex;
+      flex-direction: column;
+
+      .project-cover {
+        margin-bottom: -15px;
+        width: calc(@wrapper-width-tablet / 2);
+        a:visited {
+          color: black;
+        }
+        .project-details {
+          p {
+            margin-top: -4px;
+          }
         }
       }
     }
@@ -184,7 +189,6 @@ p {
   //
   //  }
   //}
-
   .about {
     flex-direction: row;
     .left {
@@ -200,7 +204,12 @@ p {
 }
 
 @media (min-width: 960px) {
+  p {
+    font-size: 18px;
+  }
   .hero {
+    height: 75%;
+    //margin-bottom: 50px;
     .hero-text {
       width: @wrapper-width-desktop;
       p {
@@ -216,7 +225,18 @@ p {
 
   .work {
     .work-wrapper {
-      width: @wrapper-width-desktop
+      width: @wrapper-width-desktop;
+      .project-row {
+        //display: flex;
+        flex-direction: row;
+
+        .project-cover {
+          width: calc(@wrapper-width-desktop / 2);
+          //padding: 0px 0px;
+        }
+      }
     }
+
   }
+
 }
