@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Georgia";
+  font-family: 'Noto Sans';
   font-size: 16px;
   height: 100%;
   margin: 0px 8px;
@@ -8,7 +8,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Avenir Next Condensed";
+  font-family: 'Changa One';
   text-transform: uppercase;
   margin: 20px 0px 0px 0px;
   line-height: 1.3em;
@@ -21,7 +21,7 @@ h1 {
   font-size: 6em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 h3 {
   font-weight: 600;
@@ -36,7 +36,7 @@ h3 {
   width: 655px;
 }
 .hero .hero-text p {
-  font-size: 1.3em;
+  font-size: 1.15em;
   margin-top: -20px;
 }
 p {
@@ -167,29 +167,26 @@ p {
   }
 }
 @media (min-width: 960px) {
-  p {
-    font-size: 18px;
-  }
   .hero {
     height: 75%;
   }
   .hero .hero-text {
-    width: 760px;
+    width: 860px;
   }
   .hero .hero-text p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .hero .hero-text #desktop-flag {
     font-family: Helvetica;
     display: none;
   }
   .work .work-wrapper {
-    width: 760px;
+    width: 860px;
   }
   .work .work-wrapper .project-row {
     flex-direction: row;
   }
   .work .work-wrapper .project-row .project-cover {
-    width: calc(760px / 2);
+    width: calc(860px / 2);
   }
 }
