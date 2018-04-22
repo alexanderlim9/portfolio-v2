@@ -39,9 +39,6 @@ h3 {
   font-size: 1.15em;
   margin-top: -20px;
 }
-p {
-  hyphens: auto;
-}
 .about {
   display: flex;
   flex-direction: column;
@@ -117,8 +114,12 @@ p {
 .work .work-wrapper .project-row .project-cover .project-details p {
   margin-top: -4px;
 }
+.project .project-wrapper {
+  margin-bottom: 50px;
+}
 .project .project-wrapper .project-details h2 {
   margin-bottom: 10px;
+  line-height: 1.15em;
 }
 .project .project-wrapper .project-details .company,
 .project .project-wrapper .project-details .location {
@@ -188,5 +189,12 @@ p {
   }
   .work .work-wrapper .project-row .project-cover {
     width: calc(860px / 2);
+  }
+  .project {
+    display: flex;
+    justify-content: center;
+  }
+  .project .project-wrapper {
+    width: 860px;
   }
 }

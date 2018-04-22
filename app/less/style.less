@@ -34,13 +34,6 @@ h3 {
   font-weight: 600;
 }
 
-//.divider {
-//  margin: 0px 5px;
-//  font-size: 1.3em;
-//  font-style: italic;
-//  letter-spacing: -3px;
-//}
-
 .hero {
   display: flex;
   height: 66%;
@@ -57,9 +50,9 @@ h3 {
   }
 }
 
-p {
-  hyphens: auto;
-}
+//p {
+//  hyphens: auto;
+//}
 
 .about {
   display: flex;
@@ -165,11 +158,14 @@ p {
 
 .project {
   .project-wrapper {
+    margin-bottom: 50px;
+
     .project-details {
       //display: flex;
       //justify-content: flex-start;
       h2 {
         margin-bottom: 10px;
+        line-height: 1.15em;
       }
       .company, .location {
         font-size: 1.3em;
@@ -275,6 +271,16 @@ p {
       }
     }
 
+  }
+
+  .project {
+    display: flex;
+    justify-content: center;
+    .project-wrapper {
+      width: @wrapper-width-desktop;
+
+
+    }
   }
 
 }
