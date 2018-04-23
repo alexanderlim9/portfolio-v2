@@ -22,9 +22,13 @@ h1 {
 }
 h2 {
   font-size: 2.5em;
+  line-height: 1.15em;
 }
 h3 {
   font-weight: 600;
+}
+a {
+  color: black;
 }
 .hero {
   display: flex;
@@ -92,7 +96,7 @@ h3 {
 .work {
   display: flex;
   justify-content: center;
-  margin-bottom: 225px;
+  margin-bottom: 160px;
 }
 .work .work-wrapper {
   width: 655px;
@@ -119,7 +123,6 @@ h3 {
 }
 .project .project-wrapper .project-details h2 {
   margin-bottom: 10px;
-  line-height: 1.15em;
 }
 .project .project-wrapper .project-details .company,
 .project .project-wrapper .project-details .location {
@@ -136,6 +139,9 @@ h3 {
 }
 .project .project-wrapper .project-details .lowercase {
   text-transform: none;
+}
+.project .project-wrapper .project-description {
+  margin-bottom: 50px;
 }
 .project .project-wrapper .project-details-skills p {
   margin: 2px 0px 10px;
@@ -195,6 +201,13 @@ h3 {
     justify-content: center;
   }
   .project .project-wrapper {
+    margin-top: 100px;
     width: 860px;
+  }
+  .project .project-wrapper h2 {
+    font-size: 3em;
+  }
+  .project .project-wrapper .project-description {
+    margin-bottom: 50px;
   }
 }
