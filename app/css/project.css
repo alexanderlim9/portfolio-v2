@@ -14,7 +14,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Changa One';
   text-transform: uppercase;
   margin: 20px 0px 8px 0px;
   line-height: 1.3em;
@@ -24,33 +24,148 @@ h2 {
   font-weight: 800;
 }
 h1 {
-  font-size: 4.5em;
+  font-size: 6em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
+  line-height: 1.15em;
 }
 h3 {
   font-weight: 600;
 }
-p {
-  hyphens: auto;
+a {
+  color: black;
 }
-/*.nav {
+.hero {
+  display: flex;
+  height: 66%;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text {
+  width: 655px;
+}
+.hero .hero-text p {
+  font-size: 1.15em;
+  margin-top: -20px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: seashell;
+}
+.about .left img {
+  width: 90%;
+  overflow: hidden;
+}
+.about .right {
+  display: flex;
+  justify-content: center;
+  background-color: peachpuff;
+}
+.about .right .textbox {
+  width: 90%;
+}
+.about .right .about-info {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0px;
+}
+.about .right .about-info h3 {
+  display: inline;
+  padding-right: 10px;
+  margin-top: 0px;
+}
+.about .right .about-info .social-link {
+  padding-right: 10px;
+  color: black;
+}
+.about .right .about-info .social-link h3:hover {
+  color: gray;
+}
+.about .right .hero {
+  display: flex;
+  height: 66%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about .right .hero .hero-text p {
+  font-size: 1.3em;
+  margin-top: -20px;
+}
+.work {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+.work .work-wrapper {
+  width: 655px;
+}
+.work .work-wrapper h3 {
+  margin-bottom: 0px;
+}
+.work .work-wrapper .project-row {
+  display: flex;
+  flex-direction: column;
+}
+.work .work-wrapper .project-row .project-cover {
+  margin-bottom: -15px;
+  width: calc(655px / 2);
+}
+.work .work-wrapper .project-row .project-cover a:visited {
+  color: black;
+}
+.work .work-wrapper .project-row .project-cover .project-details p {
+  margin-top: -4px;
+}
+.project .project-wrapper {
+  margin-bottom: 50px;
+}
+.project .project-wrapper .project-details h2 {
+  margin-bottom: 10px;
+}
+.project .project-wrapper .project-details .company,
+.project .project-wrapper .project-details .location {
+  font-size: 1.3em;
+  display: inline;
+}
+.project .project-wrapper .project-details .location {
+  font-style: italic;
+}
+.project .project-wrapper .project-details .date {
+  margin-top: 2px;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.project .project-wrapper .project-details .lowercase {
+  text-transform: none;
+}
+.project .project-wrapper .project-description {
+  margin-bottom: 50px;
+}
+.project .project-wrapper .project-details-skills p {
+  margin: 2px 0px 10px;
+}
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
-  .nav-link {
-    padding: 10px;
-    font-size: 16px;
-
-    p {
-      font-family: "Avenir Next";
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-  }
-}*/
+}
+.nav .nav-link {
+  padding: 10px;
+  font-size: 16px;
+}
+.nav .nav-link p {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  text-transform: uppercase;
+}
 @media (min-width: 750px) {
   .about {
     flex-direction: row;
@@ -65,15 +180,41 @@ p {
   }
 }
 @media (min-width: 960px) {
-  p {
-    font-size: 18px;
+  .hero {
+    height: 75%;
+  }
+  .hero .hero-text {
+    width: 860px;
+  }
+  .hero .hero-text p {
+    font-size: 1.3em;
+  }
+  .hero .hero-text #desktop-flag {
+    font-family: Helvetica;
+    display: none;
+  }
+  .work .work-wrapper {
+    width: 860px;
+  }
+  .work .work-wrapper .project-row {
+    flex-direction: row;
+  }
+  .work .work-wrapper .project-row .project-cover {
+    width: calc(860px / 2);
   }
   .project {
     display: flex;
     justify-content: center;
   }
   .project .project-wrapper {
-    width: 760px;
+    margin-top: 100px;
+    width: 860px;
+  }
+  .project .project-wrapper h2 {
+    font-size: 3em;
+  }
+  .project .project-wrapper .project-description {
+    margin-bottom: 50px;
   }
 }
 .project .project-wrapper .project-details h2 {
