@@ -76,3 +76,25 @@ p {
     width: 760px;
   }
 }
+.project .project-wrapper .project-details h2 {
+  margin-bottom: 10px;
+}
+.project .project-wrapper .project-details .company,
+.project .project-wrapper .project-details .location {
+  font-size: 1.3em;
+  display: inline;
+}
+.project .project-wrapper .project-details .location {
+  font-style: italic;
+}
+.project .project-wrapper .project-details .date {
+  margin-top: 2px;
+  font-size: 1.2em;
+  font-style: italic;
+}
+.project .project-wrapper .project-details .lowercase {
+  text-transform: none;
+}
+.project .project-wrapper .project-details-skills p {
+  margin: 2px 0px 10px;
+}

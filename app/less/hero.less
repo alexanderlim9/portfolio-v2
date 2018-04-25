@@ -1,0 +1,33 @@
+@import 'style.less';
+
+.hero {
+  height: 66%;
+  width: @wrapper-width-mobile;
+
+  .hero-text {
+    width: @wrapper-width-tablet;
+
+    p {
+      //font-size: 1.23em;
+      font-size: 1.18em;
+      margin-top: -20px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  //p {
+  //  font-size: 18px;
+  //}
+  .hero {
+    height: 75%;
+    //margin-bottom: 50px;
+    width: @wrapper-width-desktop;
+    .hero-text {
+      width: @wrapper-width-desktop;
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+}

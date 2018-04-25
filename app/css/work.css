@@ -76,3 +76,14 @@ p {
     width: 760px;
   }
 }
+@media (min-width: 960px) {
+  .work {
+    width: 760px;
+  }
+  .work .project-row {
+    flex-direction: row;
+  }
+  .work .project-row .project-cover {
+    width: calc(760px / 2);
+  }
+}
