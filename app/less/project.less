@@ -1,69 +1,97 @@
 @import 'style.less';
 
 .project {
-  .project-wrapper {
+  //.project-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 2.75em;
+    //margin-bottom: 40px;
+    margin: 80px 0px 40px 0px;
+  }
+
+  .project-details {
+
+    font-size: .8em;
+    margin-bottom: 20px;
+
+    .company {
+      font-weight: bold;
+      //text-transform: uppercase;
+    }
+    //.company, .location {
+    //  //font-size: 1.3em;
+    //  display: inline;
+    //}
+    //
+    //.location {
+    //  //font-style: italic;
+    //}
+
+    .date {
+      //margin-top: 2px;
+      //font-size: 1.2em;
+      //font-style: italic;
+      color: gray;
+    }
+
+    span {
+      display: block;
+    }
+
+    .divider {
+      display: inline;
+      letter-spacing: -2px;
+    }
+  }
+
+  .project-description {
     margin-bottom: 50px;
+  }
 
-    .project-details {
-      //display: flex;
-      //justify-content: flex-start;
-      h2 {
-        margin-bottom: 10px;
-      }
-      .company, .location {
-        font-size: 1.3em;
-        display: inline;
-      }
+  .project-details-skills {
 
-      .location {
-        font-style: italic;
-      }
-      .date {
-        margin-top: 2px;
-        font-size: 1.2em;
-        font-style: italic;
-      }
-      .lowercase {
-        text-transform: none;
-      }
+    h3 {
+      margin: 0px;
+      font-size: .8em;
+      display: inline;
+
+    }
+    span {
+      display: inline;
+      font-size: .8em;
+      margin: 0px 0px 15px 0px;
+    }
+
+    //ul {
+    //  padding: 0px;
+    //  margin: 0px;
+    //  list-style-type: none;
+    //}
+  }
+  //}
+}
+
+@media (min-width: 960px) {
+  .project {
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //.project-wrapper {
+    margin-top: 150px;
+    width: @wrapper-width-desktop;
+
+    h2 {
+      font-size: 3.5em;
     }
 
     .project-description {
       margin-bottom: 50px;
     }
 
-    .project-details-skills {
-      p {
-        margin: 2px 0px 10px;
-      }
-
-      //ul {
-      //  padding: 0px;
-      //  margin: 0px;
-      //  list-style-type: none;
-      //}
-    }
   }
-}
 
-
-@media (min-width: 960px) {
-  .project {
-    display: flex;
-    justify-content: center;
-    .project-wrapper {
-      margin-top: 100px;
-      width: @wrapper-width-desktop;
-
-      h2 {
-        font-size: 3em;
-      }
-
-      .project-description {
-        margin-bottom: 50px;
-      }
-
-    }
-  }
+  //}
 
 }
