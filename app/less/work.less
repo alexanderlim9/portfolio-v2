@@ -1,5 +1,36 @@
 @import 'style.less';
 
+.work {
+  display: flex;
+  //justify-content: center;
+  margin-bottom: 140px;
+  .work-wrapper {
+    //width: @wrapper-width-mobile;
+
+    h3 {
+      margin-bottom: 0px;
+    }
+    .project-row {
+      display: flex;
+      flex-direction: column;
+
+      .project-cover {
+        margin-bottom: -15px;
+        //width: calc(@wrapper-width-tablet / 2);
+
+        a:visited {
+          color: black;
+        }
+        .project-details {
+          p {
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+  }
+}
+
 //.work {
 //  //display: flex;
 //  //justify-content: center;

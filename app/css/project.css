@@ -1,15 +1,12 @@
-html,
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
-  height: 100%;
-  margin: 0px 8px;
-}
-body {
+  margin: 0px 18px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+p {
+  line-height: 1.45em;
 }
 h1,
 h2,
