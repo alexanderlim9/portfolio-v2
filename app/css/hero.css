@@ -6,7 +6,7 @@ html {
 body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
-  margin: 0px 18px;
+  margin: 0px;
 }
 p {
   line-height: 1.45em;
@@ -32,6 +32,7 @@ h2 {
 }
 h3 {
   font-family: 'Noto Sans', sans-serif;
+  font-size: .8em;
 }
 a {
   color: black;
@@ -74,6 +75,7 @@ a {
   height: 73vh;
   display: flex;
   align-items: center;
+  margin: 0px 18px;
 }
 .hero .hero-text p {
   font-size: 1.15em;
